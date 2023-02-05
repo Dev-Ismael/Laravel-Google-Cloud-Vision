@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/show', [App\Http\Controllers\UserController::class, 'show']);
+Route::post('/store', [App\Http\Controllers\UserController::class, 'store']);

@@ -46,7 +46,7 @@
 
             <h2 class="text-center mt-5">Results</h2>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 offset-md-2">
                     <table class="table table-bordered ">
                         <tbody>
                             <tr>
@@ -64,9 +64,9 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-4">
-
-                </div>
+                {{-- <div class="col-md-4">
+                    <img src="{{ asset('storage/'.$path) }}" class="img-fluid" alt="Image">
+                </div> --}}
             </div>
         @endif
 

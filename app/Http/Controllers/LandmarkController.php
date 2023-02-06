@@ -28,10 +28,9 @@ class LandmarkController extends Controller
 
             # Store Image
             $image = $request->file('image');
-            $path = $image->store('landmarks');
 
             # annotate the image
-            $image_contents = file_get_contents(storage_path("app/{$path}"));
+            $image_contents = file_get_contents($image);
             $response = $imageAnnotator->landmarkDetection($image_contents);
             $landmarks = $response->getLandmarkAnnotations();
 
@@ -44,7 +43,7 @@ class LandmarkController extends Controller
 
             $formatted_landmark = new HtmlString($landmark_content);
 
-            return view("landmark", compact('number_landmarks', 'formatted_landmark', 'path'));
+            return view("landmark", compact('number_landmarks', 'formatted_landmark'));
 
         } catch (Exception $e) {
             return $e->getMessage();

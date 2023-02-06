@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fusion-diagnostics",
+  "private_key_id": "6fdc409de2f729dda319788c1a51c7433395a1de",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDIYHVQxQO00SMk\nFTDAcCtlGwDXCNY5TLSCfcGcLqW5a5XcILQNPNIQwBWUsRKGdR2dFvpmFObYxWAj\nKJyRkbhdJTUli+zhyeGqgAtdOnhkD20iZUsKoLBd8qWNofZ+XJBKd6sYfR+N8EHd\nLpnmJQujW1dv4K9MmhlMQe3qeUbCAHYvD6vGCKdwtQRw9SccZzK+gTD2ETngN/gw\nuBqO+RfQwmoV8JZ8fBb+nIobfgy0VRh0Eg/aRKxqc4KEORLWXgQnts4uZoLKt/Nu\nk9UpRl3CHY2rcMRcuv71orUoMN8B5g9XjdfrVaR3dNTBWkgIE6hmN03bGEpWRJd0\nZgpJxLbFAgMBAAECggEAGaqnZFr0JFV0saLIPaIwoNESbLj8TdcqORvYMMQV5Ngn\n2ExVG+v6QXyFVyhOZew7CJwAo5JSVpqDu8UwNwJKMh45vk873tkv/5nKutyqPrDu\nKw18DQazyLjz5V5Fd36uWeeVwjuGzvTjTuxw+LaulLR20QUgF0kW6/p2+gWiX2ea\n+l2pz0pZWHAESXG0c4zlbkImaxHCr0IxzIJnpi/LkaEgHgI7FndNNRpbpUM5msHM\ntyvsmGVQm8AEbMkIV7P5qSKFDoBgpVbEk0y2Ukfoh9MEjMGawYowT72uHK7ztPvB\nMn+vvfBby6HScgy5XV8A7lsygyhbKbGdCgBmMrmvmQKBgQD3s4ZlZXC/xY3efUYt\nJzWTOsFVjIYbXQICo90BHxlf1NH/yI44CyUyvdYbvUSg9MIhnnNv95AAWUnLne8N\nwVFx88GNV+OytPqv+1xOqNFOG93oICU/VlWSg43m2z47M0z5CJP2UIETpN3DtvY5\nmhzx3Qb5PEN3pRfG5+PKnuZgDQKBgQDPFwrd4wJUSK4qr/3uiYMbY6aWHN2EaW5E\nVBchzh8E32HL85xiGJ3q2by/uchZOwttzBvE1/tWTgcS+naJ/RPozGncfCu6qbxC\nfrpK/4Yi9/tm8btA/FWdygHIA90uo3yLsyoGozDKnIS4p2235XiTUXJ6j5pciWac\nfW5GndfLmQKBgBW9c/ZCSPsL47+7TwV3g4RAi+duRfbw2tRQfX0ztY5rp2LDv3e7\nwrAJaVlV60gVM1SwC4GwQLtHGur8GZcjeHp/4mT9acati7MWZKuitXwdhgRxjdNZ\nSHlrgnDYnUWk4wSYdCQSPMH0nmInFMVJeXDg7VPCrkk5/DRA9gU6nQ2hAoGAacyx\n5o51wC2pnXFwYA+tBa8xinuQyHc8uHfloYW23zxosFPzT0KYW0WGYsU9kCjUO/IN\nNdHKPFt8zbtcGD9Njp/wbY6aoLDa13X7IxnMo8zhicRyEE9aRlTP+CnRNGSd2plc\nHSv+X2T7gYM4UL1RjqILxIXdLO2dmNGUJ0u41fECgYAVCAmkfcAFp4oigeGDXbgW\nclWWct663LoMCEbIFTImv4zXapHqcrs6LqGJUeire7Jhm/7+Sblkzy2WKUo5sol7\nkTKBLIenUXbCm+O/VIW6XTirzdB8D3UxHLJzbSwgqKr3Fg4EBf+br9w4hPcqFcBk\nAWmmXF2n4R0mADOgTP6Wsw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "fusion-diagnostics@fusion-diagnostics.iam.gserviceaccount.com",
+  "client_id": "113121612670593759262",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fusion-diagnostics%40fusion-diagnostics.iam.gserviceaccount.com"
+}

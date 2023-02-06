@@ -15,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('/show', [App\Http\Controllers\UserController::class, 'show']);
 Route::post('/store', [App\Http\Controllers\UserController::class, 'store']);
+
+
+Route::get('/landmark', [App\Http\Controllers\LandmarkController::class, 'show']);
+Route::post('/landmark/detect', [App\Http\Controllers\LandmarkController::class, 'detect']);

@@ -5,8 +5,8 @@
 
     <div class="container mt-5">
 
-        <h1 class="text-center">Detect Landmarks!</h1>
-        <form action="/landmark/detect" method="post" enctype="multipart/form-data">
+        <h1 class="text-center">Detect text!</h1>
+        <form action="/content/detect" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group text-center">
                 <input class="form-control" type="file" name="image">

@@ -29,7 +29,7 @@ class ContentController extends Controller
                 'credentials' => base_path('fusion-diagnostics-6fdc409de2f7.json')
             ]);
 
-            # Store Image
+            # Set img request in var
             $image = $request->file('image');
 
             # annotate the image
@@ -43,11 +43,15 @@ class ContentController extends Controller
             foreach ($texts as $text) {
                 $text_content .= "{$text->getDescription()}";
             }
-
             $formatted_text = new HtmlString($text_content);
 
+            //  Upload image & Create name img
+            $file_extention = $image -> getClientOriginalExtension();
+            $file_name = time() . "." . $file_extention;   // name => 3628.png
+            $image -> move( "uploads" , $file_name );
+            $img_path = "uploads/". $file_name;
 
-            return view("content", compact('number_texts', 'formatted_text'));
+            return view("content", compact('number_texts', 'formatted_text', 'img_path'));
 
         } catch (Exception $e) {
             return $e->getMessage();

@@ -16,9 +16,9 @@
 
         @if ( isset($number_landmarks) && isset($formatted_landmark) )
 
-            <h2 class="text-center mt-5">Results</h2>
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
+            <h1 class="text-center mt-5 pt-5">Results</h1>
+            <div class="row h-100 d-flex align-items-center justify-content-center mb-5">
+                <div class="col-md-8">
                     <table class="table table-bordered">
                         <tbody>
                             <tr>
@@ -31,14 +31,14 @@
                                 <td>
                                     <i class="fa-solid fa-image"></i> Landmarks Forrmatted
                                 </td>
-                                <td> {{ $formatted_landmark }} </td>
+                                <td style="word-break: break-word;"> {{ $formatted_landmark }} </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                {{-- <div class="col-md-4">
-                    <img src="{{ asset('storage/'.$path) }}" class="img-fluid" alt="Image">
-                </div> --}}
+                <div class="col-md-4">
+                    <img src="{{ asset($img_path) }}" class="rounded img-fluid" alt="uploaded-image">
+                </div>
             </div>
         @endif
 

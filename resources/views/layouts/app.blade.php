@@ -23,7 +23,7 @@
 
     <title>Landmarks Detect</title>
     <style>
-        body{
+        body {
             font-family: 'Ubuntu', sans-serif;
         }
     </style>
@@ -37,6 +37,17 @@
 </head>
 
 <body>
+
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container">
+            <a class="navbar-brand text-light" href="/">
+                <i class="fa-solid fa-house-chimney"></i> Home Page
+            </a>
+        </div>
+    </nav>
+
 
     @yield('content')
 

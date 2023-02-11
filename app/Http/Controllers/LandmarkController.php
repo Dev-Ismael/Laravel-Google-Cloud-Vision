@@ -26,7 +26,7 @@ class LandmarkController extends Controller
                 'credentials' => base_path('fusion-diagnostics-6fdc409de2f7.json')
             ]);
 
-            # Store Image
+            # Set img request in var
             $image = $request->file('image');
 
             # annotate the image
@@ -40,10 +40,15 @@ class LandmarkController extends Controller
             foreach ($landmarks as $landmark) {
                 $landmark_content .= "{$landmark->getDescription()}";
             }
-
             $formatted_landmark = new HtmlString($landmark_content);
 
-            return view("landmark", compact('number_landmarks', 'formatted_landmark'));
+            //  Upload image & Create name img
+            $file_extention = $image -> getClientOriginalExtension();
+            $file_name = time() . "." . $file_extention;   // name => 3628.png
+            $image -> move( "uploads" , $file_name );
+            $img_path = "uploads/". $file_name;
+
+            return view("landmark", compact('number_landmarks', 'formatted_landmark', 'img_path'));
 
         } catch (Exception $e) {
             return $e->getMessage();

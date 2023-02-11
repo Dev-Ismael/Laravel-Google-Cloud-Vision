@@ -19,6 +19,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'home']);
 Route::get('/content', [App\Http\Controllers\ContentController::class, 'show']);
 Route::post('/content/detect', [App\Http\Controllers\ContentController::class, 'detect']);
 
-
 Route::get('/landmark', [App\Http\Controllers\LandmarkController::class, 'show']);
 Route::post('/landmark/detect', [App\Http\Controllers\LandmarkController::class, 'detect']);

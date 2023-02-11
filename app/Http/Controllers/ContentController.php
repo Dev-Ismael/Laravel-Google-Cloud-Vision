@@ -15,14 +15,16 @@ class ContentController extends Controller
         return view('content');
     }
 
-    public function detect(Request $request){
 
+
+    public function detect(Request $request){
 
         $validated = $request->validate([
             'image' => 'required',
         ]);
 
         try {
+
             $imageAnnotator = new ImageAnnotatorClient([
                 'credentials' => base_path('fusion-diagnostics-6fdc409de2f7.json')
             ]);
@@ -32,23 +34,25 @@ class ContentController extends Controller
 
             # annotate the image
             $image_contents = file_get_contents($image);
-            $response = $imageAnnotator->landmarkDetection($image_contents);
-            $landmarks = $response->getLandmarkAnnotations();
+            $response = $imageAnnotator->textDetection($image_contents);
+            $texts = $response->getTextAnnotations();
 
-            $number_landmarks = count($landmarks);
-            $landmark_content = '';
+            $number_texts = count($texts);
+            $text_content = '';
 
-            foreach ($landmarks as $landmark) {
-                $landmark_content .= "{$landmark->getDescription()}";
+            foreach ($texts as $text) {
+                $text_content .= "{$text->getDescription()}";
             }
 
-            $formatted_landmark = new HtmlString($landmark_content);
+            $formatted_text = new HtmlString($text_content);
 
-            return view("content", compact('number_landmarks', 'formatted_landmark'));
+
+            return view("content", compact('number_texts', 'formatted_text'));
 
         } catch (Exception $e) {
             return $e->getMessage();
         }
+
         $imageAnnotator->close();
 
     }

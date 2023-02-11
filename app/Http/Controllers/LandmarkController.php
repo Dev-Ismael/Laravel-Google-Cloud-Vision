@@ -48,6 +48,7 @@ class LandmarkController extends Controller
         } catch (Exception $e) {
             return $e->getMessage();
         }
+
         $imageAnnotator->close();
     }
 

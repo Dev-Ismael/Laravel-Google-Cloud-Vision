@@ -14,7 +14,7 @@
             </div>
         </form>
 
-        @if ( isset($number_landmarks) && isset($formatted_landmark) )
+        @if ( isset($number_texts) && isset($formatted_text) )
 
             <h2 class="text-center mt-5">Results</h2>
             <div class="row">
@@ -23,15 +23,9 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <i class="fa-solid fa-hashtag"></i> Number Of Landmarks
+                                    <i class="fa-solid fa-image"></i> Text Content
                                 </td>
-                                <td> {{ $number_landmarks }} </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="fa-solid fa-image"></i> Landmarks Forrmatted
-                                </td>
-                                <td> {{ $formatted_landmark }} </td>
+                                <td> {{ $formatted_text }} </td>
                             </tr>
                         </tbody>
                     </table>

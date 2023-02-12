@@ -21,7 +21,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Landmarks Detect</title>
+    <title>Google Cloud Vision</title>
     <style>
         body {
             font-family: 'Ubuntu', sans-serif;
@@ -43,7 +43,7 @@
     <nav class="navbar navbar-light bg-primary">
         <div class="container">
             <a class="navbar-brand text-light" href="/">
-                <i class="fa-solid fa-house-chimney"></i> Home Page
+                <i class="fa-solid fa-house-chimney"></i>
             </a>
         </div>
     </nav>

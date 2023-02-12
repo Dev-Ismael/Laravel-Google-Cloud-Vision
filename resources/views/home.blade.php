@@ -24,6 +24,14 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 mt-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"> PDF Files </h5>
+                        <a href="/pdf" class="btn btn-primary">Try It</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>

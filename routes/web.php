@@ -21,3 +21,6 @@ Route::post('/content/detect', [App\Http\Controllers\ContentController::class, '
 
 Route::get('/landmark', [App\Http\Controllers\LandmarkController::class, 'show']);
 Route::post('/landmark/detect', [App\Http\Controllers\LandmarkController::class, 'detect']);
+
+Route::get('/pdf', [App\Http\Controllers\PDFController::class, 'show']);
+Route::post('/pdf/detect', [App\Http\Controllers\PDFController::class, 'detect']);

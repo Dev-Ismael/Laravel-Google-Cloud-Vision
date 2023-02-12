@@ -5,19 +5,20 @@
 
     <div class="container mt-5">
 
-        <h1 class="text-center">Detect text!</h1>
-        <form action="/content/detect" method="post" enctype="multipart/form-data">
+        <h1 class="text-center">Detect PDF!</h1>
+        <form action="/pdf/detect" method="post" enctype="multipart/form-data">
             @csrf
             <div class="form-group text-center">
-                <input class="form-control  @error('image') is-invalid @enderror" type="file" name="image">
-                @error('image')
+                <input class="form-control  @error('pdf') is-invalid @enderror" type="file" name="pdf">
+                @error('pdf')
                     <p class="form-text text-start text-danger">{{ $message }}</p>
                 @enderror
                 <button type="submit" class=" btn btn-primary mt-2">Convert</button>
             </div>
         </form>
 
-        @if ( isset($number_texts) && isset($formatted_text) )
+        {{-- @if ( isset($number_landmarks) && isset($formatted_landmark) )
+
             <h1 class="text-center mt-5 pt-5">Results</h1>
             <div class="row h-100 d-flex align-items-center justify-content-center mb-5">
                 <div class="col-md-8">
@@ -25,9 +26,15 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <i class="fa-solid fa-image"></i> Text Content
+                                    <i class="fa-solid fa-hashtag"></i> Number Of Landmarks
                                 </td>
-                                <td style="word-break: break-word;"> {{ $formatted_text }} </td>
+                                <td> {{ $number_landmarks }} </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fa-solid fa-image"></i> Landmarks Forrmatted
+                                </td>
+                                <td style="word-break: break-word;"> {{ $formatted_landmark }} </td>
                             </tr>
                         </tbody>
                     </table>
@@ -36,7 +43,7 @@
                     <img src="{{ asset($img_path) }}" class="rounded img-fluid" alt="uploaded-image">
                 </div>
             </div>
-        @endif
+        @endif --}}
 
 
 

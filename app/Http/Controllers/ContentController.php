@@ -20,7 +20,7 @@ class ContentController extends Controller
     public function detect(Request $request){
 
         $validated = $request->validate([
-            'image' => 'required',
+            'image' => ['required' , 'mimes:jpeg,png,jpg' , 'max:2048'],
         ]);
 
         try {
